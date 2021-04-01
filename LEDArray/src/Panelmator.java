@@ -9,6 +9,10 @@ public class Panelmator {
 		// TODO Auto-generated method stub
 		transmitTime=0;
 		try {
+			/*
+			 * CODE THAT READS THE TEAM COLOR FROM THE ROBORIO 
+			 * GOES HERE
+			 */
 			final File folder = new File("../src/arrays/");
 			Gif[] theGifs=new Gif[folder.listFiles().length];
 			for (int i=0;i<folder.listFiles().length;i++) {
@@ -18,10 +22,6 @@ public class Panelmator {
 				theGifs[i]=new Gif(fileName,Color.blue);
 			}
 			while(true) {
-				/*
-				 * CODE THAT READS THE TEAM COLOR FROM THE ROBORIO 
-				 * GOES HERE
-				 */
 				/*
 				 * CODE THAT READS THE CURRENT IMAGE FROM THE ROBORIO
 				 * GOES HERE

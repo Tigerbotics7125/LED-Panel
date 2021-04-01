@@ -16,6 +16,7 @@ public class Gif {
 	private Scanner blueIn;
 	private Scanner alphaIn;
 	private GifFrame[] frames;
+	private String name;
 
 	/**
 	 * This method will load all of the RGB arrays into each GifFrame
@@ -25,6 +26,7 @@ public class Gif {
 	 * @throws IOException Catch file problems
 	 */
 	public Gif(String fileName, Color background) throws IOException{
+		name=fileName;
 		//Read the RGBA arrays of the top level GIF
 		File redFile=new File("../src/arrays/"+fileName+"_reds_array.txt");
 		File greenFile=new File("../src/arrays/"+fileName+"_greens_array.txt");
@@ -122,5 +124,16 @@ public class Gif {
 			endDelay=System.currentTimeMillis();
 		}
 	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getFrames() {
+		return frames.length;
+	}
 
+	public String getData(int frame) {
+		return frames[frame].getData();
+	}
 }

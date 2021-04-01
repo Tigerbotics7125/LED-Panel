@@ -106,4 +106,16 @@ public class GifFrame {
 		// TODO Auto-generated method stub
 		return red.length;
 	}
+	public String getData() {
+		// TODO Auto-generated method stub
+		int count=0;
+		String data="";
+		for(int i=0;i<red.length;i++) {
+			for(int j=0;j<red[i].length;j++) {
+				data+=count+" "+red[i][j]+" "+green[i][j]+" "+blue[i][j]+" ";
+				count++;
+			}
+		}
+		return data;
+	}
 }

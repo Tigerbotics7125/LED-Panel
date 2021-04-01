@@ -112,7 +112,7 @@ public class GifFrame {
 		String data="";
 		for(int i=0;i<red.length;i++) {
 			for(int j=0;j<red[i].length;j++) {
-				data+=count+" "+red[i][j]+" "+green[i][j]+" "+blue[i][j]+" ";
+				data+=count+" "+green[i][j]+" "+red[i][j]+" "+blue[i][j]+" ";
 				count++;
 			}
 		}
